@@ -38,7 +38,18 @@ def handle_client(client_socket):
                 else:
                     error_count += 1
                     response = f"{len(f'ERR {key} does not exist'):03} ERR {key} does not exist"
-            
+            elif command == 'P':
+                put_operations += 1
+                value = data[4:].split(' ', 1)[1] if len(data.split(' ', 1)) > 1 else ''
+                if key in tuple_space:
+                    error_count += 1
+                    response = f"{len(f'ERR {key} already exists'):03} ERR {key} already exists"
+                else:
+                    tuple_space[key] = value
+                    response = f"{len(f'OK ({key}, {value}) added'):03} OK ({key}, {value}) added"
+            client_socket.send(response.encode('utf-8'))
+    except Exception as e:
+        print(f"Error handling client: {e}")
     finally:
         client_socket.close()
 
