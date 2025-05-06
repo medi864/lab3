@@ -22,6 +22,24 @@ def handle_client(client_socket):
             size_str=data[:3]
             command=data[3]
             key =data[4:].split(' ',1)[0]
-            print("nihao")
+            if command == 'R':
+                read_operations += 1
+                value = tuple_space.get(key, '')
+                if value:
+                    response = f"{len(f'OK ({key}, {value}) read'):03} OK ({key}, {value}) read"
+                else:
+                    error_count += 1
+                    response = f"{len(f'ERR {key} does not exist'):03} ERR {key} does not exist"
+            elif command == 'G':
+                get_operations += 1
+                value = tuple_space.pop(key, '')
+                if value:
+                    response = f"{len(f'OK ({key}, {value}) removed'):03} OK ({key}, {value}) removed"
+                else:
+                    error_count += 1
+                    response = f"{len(f'ERR {key} does not exist'):03} ERR {key} does not exist"
+            
     finally:
         client_socket.close()
+
+
