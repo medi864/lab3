@@ -16,3 +16,20 @@ def send_request(client_socket, request):
     # Receive the response from the server
     response = client_socket.recv(1024).decode('utf-8')
     return response
+def main():
+    """
+    Main function to handle client operations.
+    """
+    if len(sys.argv) != 4:
+        print("Usage: python client.py <server_host> <server_port> <request_file>")
+        sys.exit(1)
+    # Get the server host from command line arguments
+    server_host = sys.argv[1]
+    # Get the server port from command line arguments
+    server_port = int(sys.argv[2])
+    # Get the request file path from command line arguments
+    request_file = sys.argv[3]
+    # Create a TCP socket
+    client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    # Connect to the server
+    client_socket.connect((server_host, server_port))
