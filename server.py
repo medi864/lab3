@@ -74,4 +74,28 @@ def print_statistics():
             avg_size = 0
             avg_key_size = 0
             avg_value_size = 0
-
+        print(f"Number of tuples: {num_tuples}, Average tuple size: {avg_size}, "
+              f"Average key size: {avg_key_size}, Average value size: {avg_value_size}, "
+              f"Total clients: {total_clients}, Total operations: {total_operations}, "
+              f"Read operations: {read_operations}, Get operations: {get_operations}, "
+              f"Put operations: {put_operations}, Error count: {error_count}")
+        time.sleep(10)
+def start_server(port):
+    """
+    Start the server and listen for incoming client connections.
+    :param port: The port number on which the server will listen
+    """
+    global total_clients
+    # Create  TCP socket
+    server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    # Bind the socket to  specified address and port
+    server_socket.bind(('localhost', port))
+    # Start listening for incoming connections
+    server_socket.listen(5)
+    print(f"Server listening on port {port}")
+    while True:
+        # Accept  new client connection
+        client_socket, client_address = server_socket.accept()
+        total_clients += 1
+        client_thread = threading.Thread(target=handle_client, args=(client_socket,))
+        client_thread.start()
