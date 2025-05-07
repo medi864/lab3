@@ -49,3 +49,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+ #please enter python client.py localhost 51234 test.txt in the new terminal to test
