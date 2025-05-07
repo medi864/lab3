@@ -99,3 +99,10 @@ def start_server(port):
         total_clients += 1
         client_thread = threading.Thread(target=handle_client, args=(client_socket,))
         client_thread.start()
+if __name__ == "__main__":
+    port = 51234
+    # Start the statistics printing thread
+    stats_thread = threading.Thread(target=print_statistics)
+    stats_thread.start()
+    # Start the server
+    start_server(port)
