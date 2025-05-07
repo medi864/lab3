@@ -1,0 +1,72 @@
+GET silvertip
+GET michel_montaigne
+PUT hard_liquor an alcoholic beverage that is distilled rather than fermented
+PUT al_aqabah Jordan's port; located in southwestern Jordan on the Gulf of Aqaba
+READ mulberry_tree
+PUT rewire provide with new wiring
+READ pervasive
+READ church_of_the_brethren
+READ 60_minutes
+PUT mince food chopped into small bits
+GET billow
+READ linkup
+READ rewire
+GET published
+GET hard_liquor
+PUT michel_montaigne French writer regarded as the originator of the modern essay (1533-1592)
+READ mulberry_tree
+GET western_ladies'_tresses
+GET impudent
+READ rhinencephalon
+READ absorbance
+GET grail
+PUT podargidae frogmouths
+READ hard_liquor
+GET homospory
+PUT grail the object of any prolonged endeavor
+READ argentinosaur
+PUT jersey_knapweed a variety of knapweed
+GET armenia
+PUT trasimeno a battle in central Italy where Hannibal defeated the Romans under Flaminius in 217 BC
+PUT penstemon_linarioides plant having small narrow leaves and blue-violet flowers in long open clusters; Utah and Colorado to New Mexico and Arizona
+PUT potty_chair toilet consisting of a small seat used by young children
+GET grail
+GET baby_doc
+READ al_aqabah
+READ diabolism
+GET labyrinthine_sense
+PUT massif_central a mountainous plateau in southern France that covers almost one sixth of the country
+PUT gainsay take exception to
+READ urinate
+READ argentinosaur
+READ pseudophloem
+READ mulberry_tree
+GET urinate
+GET spiritualty
+READ merchant_marine
+PUT disciplinary relating to discipline in behavior
+READ rhinencephalon
+READ published
+GET spirit_stove
+PUT bundled-up dressed warmly
+PUT de_spinoza Dutch philosopher who espoused a pantheistic system (1632-1677)
+READ bundled-up
+PUT order_eubacteriales one of two usually recognized orders of true bacteria; Gram-positive spherical or rod-shaped forms; some are motile; in some classifications considered an order of Schizomycetes
+PUT dwelling housing that someone is living in
+PUT disciplinary relating to discipline in behavior
+PUT de_spinoza Dutch philosopher who espoused a pantheistic system (1632-1677)
+GET comedienne
+READ fatless
+READ order_eubacteriales
+READ rewire
+READ xanthoma_multiplex
+READ flute_glass
+PUT giovanni_mastai-ferretti Italian pope from 1846 to 1878 who in 1854 declared the dogma of the Immaculate Conception of the Virgin Mary
+GET armenia
+READ hyacinthus_orientalis_albulus
+READ comedienne
+PUT published put into print
+READ gin_and_tonic
+READ costalgia
+GET greeting
+GET drepanididae
