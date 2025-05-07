@@ -33,3 +33,19 @@ def main():
     client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     # Connect to the server
     client_socket.connect((server_host, server_port))
+    with open(request_file, 'r') as file:
+        for line in file:
+            line = line.strip()
+            if not line:
+                continue
+            if len(line.replace(' ', '')) > 970:
+                print(f"Error: Request {line} exceeds the maximum size. Skipping.")
+                continue
+            # Send the request to the server and get the response
+            response = send_request(client_socket, line)
+            print(f"{line}: {response}")
+    # Close the client socket
+    client_socket.close()
+
+if __name__ == "__main__":
+    main()
